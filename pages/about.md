@@ -6,9 +6,11 @@ feature-img: "assets/img/pexels/travel.jpeg"
 tags: [Page]
 ---
 
-Type on Strap is based on Type Theme, a free and open-source theme for [Jekyll](http://jekyllrb.com/), licensed under the MIT License.
+Hi,
 
-Head over to the [theme's documentation](https://github.io/sylhare/Type-on-Strap) for much more information about Type on Strap or to install this theme on your own Jekyll site.
+I am Asit Dhal. I’m a software engineer by profession. I contribute to CMake opensource project in my free time. I write simple, readable, and elegant code, and occasionally use some design pattern and template meta programming. I know C++14/17, Qt, CMake, and Python.
 
-This file is an example of a page in Jekyll, that automatically shows up in the header navigation, you can delete or modify this file freely.
+I was born and raised in Bhubaneswar, India. At this moment, I am based in Munich. I enjoy mountain biking and watching field hockey.
+
+How to reach me: dhal.asitk@gmail.com
  
