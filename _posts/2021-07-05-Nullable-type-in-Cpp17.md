@@ -39,7 +39,7 @@ int main()
 
 The problem is we need to know what is that special value that represents absence of value. For a type representing ID of type int, 0 is the special value. For pointers, nullptr is a special value. Special value depends on the underlying type. This is cumbersome to maintain when the application has 100s of types.
 
-A nullable value type can be represented as a wrapper of an existing type and a method which says whether the instance has a valid value. In C++17, std::optional was introduced to represent nullable value type. std::optional objects usually have the contained object and a boolean flag.
+A nullable value type can be represented as a wrapper of an existing type and a method which says whether the instance has a valid value. In C++17, `std::optional` was introduced to represent nullable value type. `std::optional` objects usually have the contained object and a boolean flag.
 
 1. If it contains std::nullopt, it means it has no value. When it has no value, the value is in uninitialized state.
 2. It supports both copy semantics and move semantics. The semantics depends on the underlying type.
@@ -78,11 +78,11 @@ int main()
 }
 ```
 
-Instead of returning 0 as a special value, we return std::nullopt. In the calling site, we don’t have to worry about what is the special value.
+Instead of returning 0 as a special value, we return `std::nullopt`. In the calling site, we don’t have to worry about what is the special value.
 
 ### Construction
 
-We can create std::optional object which has no value at all. The contained object won’t be constructed at all.
+We can create `std::optional` object which has no value at all. The contained object won’t be constructed at all.
 
 ```cpp
 class Val
@@ -107,7 +107,7 @@ int main()
 }
 ```
 
-Here, the constructor of contained object is not called. When the std::optional instance is created, a byte array of size and alignment enough to hold the object is allocated. When it needs to construct the contained object, then placement new is used to create the object at the same memory location. For one std::optional instance, there can be many contained objects in a lifetime, but memory is always fixed.
+Here, the constructor of contained object is not called. When the std::optional instance is created, a byte array of size and alignment enough to hold the object is allocated. When it needs to construct the contained object, then placement new is used to create the object at the same memory location. For one `std::optional` instance, there can be many contained objects in a lifetime, but memory is always fixed.
 
 We can initialize with some value. Because of C++17’s type deduction rules, type does not need to be specified.
 
@@ -123,7 +123,7 @@ Here, an unnecessary temporary will be created. We can use `std::in_place` to co
 std::optional<std::tuple<int, std::string>> opt3 { std::in_place, 10, "Value" };
 ```
 
-std::optional has a constructor, which takes universal reference. This allows in place construction avoiding creation of unnecessary temporaries.
+`std::optional` has a constructor, which takes universal reference. This allows in place construction avoiding creation of unnecessary temporaries.
 There is an utility function, `std::make_optional`, can also be used to do the in place construction with `std::in_place` tag.
 
 ```cpp
@@ -156,11 +156,11 @@ int main()
 }
 ```
 
-std::optional can also be copy or move constructed from other std::optional objects.
+`std::optional` can also be copy or move constructed from other `std::optional` objects.
 
 ### Accessing the contained value
 
-std::optional provides conversion to bool operator and `has_value()` method to check if it has a value.
+`std::optional` provides conversion to bool operator and `has_value()` method to check if it has a value.
 
 ```cpp
 int main() 
@@ -184,7 +184,7 @@ int main()
 }
 ```
 
-std::optional provides * and -> overloaded operator to access the contained object. If it has no value, it will have an undefined behavior. It also provides value() method which throws `std::bad_optional_access` exception in case it has no value.
+`std::optional` provides `*` and `->` overloaded operator to access the contained object. If it has no value, it will have an undefined behavior. It also provides `value()` method which throws `std::bad_optional_access` exception in case it has no value.
 
 ```cpp
 int main()
@@ -245,13 +245,13 @@ value_or: 10
 value_or: 0
 ```
 
-operator * and value() returns object by reference. So, you should avoid it using on temporaries.
+`operator *` and `value()` returns object by reference. So, you should avoid it using on temporaries.
 `value_or()` returns by value. So, you should avoid it using on objects where copy is an expensive operation.
 
 
 ### Modifying the value
-std::optional provides emplace() method assign a new value to the contained type. emplace() takes a universal reference. So, if a temporary is given, it will move construct the contained object.
-It also provides reset() to destroy the underlying object.
+`std::optional` provides `emplace()` method assign a new value to the contained type. `emplace()` takes a universal reference. So, if a temporary is given, it will move construct the contained object.
+It also provides `reset()` to destroy the underlying object.
 
 ```cpp
 class Value
