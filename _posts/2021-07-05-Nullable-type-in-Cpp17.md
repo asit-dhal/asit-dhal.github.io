@@ -28,8 +28,7 @@ int main()
         if (auto id = getId(e); id != 0) {
             std::cout << e << ": " << id << std::endl;
         } else {
-            std::cout << e << " is not registered in the system"
-                      << std::endl;
+            std::cout << e << " is not registered in the system" << std::endl;
         }
     }
     
@@ -69,8 +68,7 @@ int main()
         if (auto id = getId(e); id) {
             std::cout << e << ": " << id.value() << std::endl;
         } else {
-            std::cout << e << " is not registered in the system"
-                      << std::endl;
+            std::cout << e << " is not registered in the system" << std::endl;
         }
     }
     
@@ -192,16 +190,12 @@ int main()
     std::optional<int> opt1{ 10 };
     if (opt1) {
         std::cout << "value from (*): " << *opt1 << std::endl;
-        std::cout << "value from value(): "
-                  << opt1.value() << std::endl;
+        std::cout << "value from value(): " << opt1.value() << std::endl;
     }
     
-    std::optional<std::pair<int, std::string>> opt2
-                           { std::in_place, 10, "test" }; 
+    std::optional<std::pair<int, std::string>> opt2{ std::in_place, 10, "test" }; 
     if (opt2) {
-        std::cout << "value from (->): ("
-                  << opt2->first << ", " 
-                  << opt2->second << ")" << std::endl;
+        std::cout << "value from (->): (" << opt2->first << ", " << opt2->second << ")" << std::endl;
     }
     
     std::optional<int> opt3{ std::nullopt };
@@ -356,16 +350,13 @@ int main()
 {
     std::optional<int> int1{10};
     std::optional<int> int2{20};
-    std::cout << std::boolalpha 
-              << (int1 < int2) << std::endl; // true
+    std::cout << std::boolalpha << (int1 < int2) << std::endl; // true
     
     std::optional<int> nullInt1;
     std::optional<int> nullInt2;
-    std::cout << std::boolalpha 
-              << (nullInt1 == nullInt2) << std::endl; // true
+    std::cout << std::boolalpha << (nullInt1 == nullInt2) << std::endl; // true
     
-    std::cout << std::boolalpha
-              << (nullInt1 < int1) << std::endl; // true
+    std::cout << std::boolalpha << (nullInt1 < int1) << std::endl; // true
     
     return 0;
 }
