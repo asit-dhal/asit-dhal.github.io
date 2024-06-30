@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Nullable Type in C++17
+tags: [Cpp17, BackToBasics]
 ---
 Sometimes we create an object which contains no valid data. We often a associate a flag or a special value, which decides the validity of the data. For example,
 
