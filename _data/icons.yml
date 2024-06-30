@@ -5,26 +5,26 @@ calendly:
 dribbble:
 facebook:
 flickr:
-github: sylhare
+github: asit-dhal
 gitlab:
-google-scholar:   # e.g. "WXAAOb0AAAAJ"
+google-scholar:   
 instagram:
 hacker-news:
 keybase:
 linkedin:
-mail:             # e.g. "sam@mail.com"
-map:              # e.g. "34.0886/-118.3191"
-mastodon:         # e.g. "fostodon.org/@sam"
-matrix:           # e.g. "@sam:matrix.org"
+mail:             dhal.asitk@gmail.com
+map:              
+mastodon:         
+matrix:           
 medium:
 patreon:
-phone:            # e.g. "+11111111111"
+phone:            
 pinterest:
 reddit:
 soundcloud:
-sms:              # e.g. "+11111111111"
-stack-exchange:   # e.g. "123456789"
-stack-overflow:   # e.g. "123456789"
+sms:              
+stack-exchange:   
+stack-overflow:   
 steam:
 telegram:
 tumblr:
@@ -33,4 +33,4 @@ twitter:
 vimeo:
 vk:
 wordpress:
-youtube:          # e.g. "UCqECaJ8Gagnn7YCbPEzWH6g"
+youtube:          
