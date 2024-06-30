@@ -1,7 +1,7 @@
 ---
 layout: post
-title: Structural Binding in C++
-tags: [Cpp17, BackToBasics]
+title: Structured Binding Declaration
+tags: [Cpp, BackToBasics]
 ---
 Structured binding allows you to initialize multiple variables with individual elements of a structure, tuple, or array.
 
