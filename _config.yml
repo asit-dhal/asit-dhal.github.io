@@ -3,14 +3,14 @@ baseurl: ""
 url: "https://asit-dhal.github.io"
 
 # THEME-SPECIFIC CONFIGURATION
-title: Asit Dhal                                  # site's title
-description: "C++, Qt, and CMake"      # used by search engines
+title: Back to Basics                                   # site's title
+description: C++/CMake, Database, gRPC, System Design      # used by search engines
 avatar:                          # Empty for no avatar in navbar
 favicon: assets/favicon.ico                             # Icon displayed in the tab
 
 # Header and footer text
-header_text: 🙏 # Change Blog header text
-header_feature_image: assets/img/pexels/triangular.jpeg
+header_text: Back to Basics
+header_feature_image: assets/img/pexels/landing.jpg
 footer_text: Thanks for visiting !!
 
 # Blog
