@@ -31,7 +31,7 @@ The elements connect with each other which forms a close feedback loop.
 
 These ideas will become clearer as we walk through the implementation of our "Hello World" GUI app.
 
-You should read the Iced author's explanation of the architecture [here](https://book.iced.rs/architecture.html). The following section is my own interpretation.
+You should read the Iced author's explanation of the architecture [here](https://book.iced.rs/architecture.html). The previous section is my own interpretation.
 
 ## Implementation
 
@@ -55,7 +55,7 @@ iced = {version = "0.12.1"}
 
 The app features a label that displays the value of a variable (state) and includes two buttons: 'Increment' and 'Decrement.' When the user presses the 'Increment' button, the variable's value increases by 1. Similarly, pressing the 'Decrement' button decreases the value by 1. 
 
-In Iced terminology, our model encapsulates the application's state, which is the variable that is incemented or decremented.
+In Iced terminology, our model encapsulates the application's state, which is the variable that is incremented or decremented.
 
 ```rust
 struct AppState {
