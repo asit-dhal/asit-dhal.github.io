@@ -23,7 +23,7 @@ color_image: /assets/img/lineart.png                    # A bit transparent for 
 # For layout customization, go to the "_sass > base" folder, and check "_variables.scss"
 katex: true                                             # Enable if using math markup
 mermaid: true                                           # Enable mermaid-js for sequence and diagrams
-google_analytics:  G-5WLCECMLXW
+google_analytics:
 cookie_consent: true
 color_theme: dark                                       # auto, dark or light
 

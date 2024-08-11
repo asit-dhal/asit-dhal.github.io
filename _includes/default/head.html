@@ -64,12 +64,8 @@
           </span><a id="cookie-notice-accept" class="button">{{ site.data.language.str_cookie_approve | default: "Approve" }}</a>
         </span>
     {% endif %}
-    {% if site.google_analytics %}
-        <!-- Global site tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
-        <!-- Page analysis (analytics.js) -->
-        <script async src='https://www.google-analytics.com/analytics.js'></script>
-    {% endif %}
+
+    <script defer async data-host="asitdhal.dev" src="https://liteanalytics.com/lite.js"></script>
 
     <!-- seo tags -->
     <meta property="og:image" content="{{ '/' | absolute_url }}{% if page.thumbnail %}{{ page.thumbnail }}{% else %}{{ page.feature-img | default: site.header_feature_image }}{% endif %}">
