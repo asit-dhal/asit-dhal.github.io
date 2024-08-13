@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Understanding the Iced GUI Application Architecture and Implementing a Sandbox Example
+title: Understanding the Rust Iced GUI Application Architecture and Implementing a Sandbox Example
 tags: [Rust, Iced]
 ---
 
